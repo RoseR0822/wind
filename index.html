@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/slider.css">
+<title>理财宝</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+address{
+	text-align: center;
+    font-style: normal;
+    color: #666666;
+ }
+body,ul,li,img{margin:0;padding:0;}
+body{background: #F5F5F5;}
+ul{list-style-type:none;}
+a {
+	text-decoration:none;
+	color: #FFFFFF;
+	display: block;
+}
+a:hover{
+	color: #DDDDDD;
+}
+#container{
+	margin: 0 auto;
+	width:100%;
+	font-family: "Microsoft YaHei";
+}
+
+#phone{
+		float: left;
+		line-height: 0;
+		color: white;
+}
+#top{
+	height: 30px;
+	background: gray;
+	border-bottom: 2px solid yellow;
+	color: white;
+}
+#top li{
+	font-size: 15px;
+	padding: 4px;
+	border-left:1px solid #bbb;
+	float: right;
+}
+#top li:last-child{border:none;}
+.clean{clear: both;}
+#nav-logo{
+	float: left;
+}
+#nav li{
+	font-size: 20px;
+	font-weight: bold;
+	color:gray;
+	padding: 8px 12px;
+	border-left:1px solid #bbb;
+	float: right;
+}
+#nav li:last-child{
+	border-right:none;
+	border-left: 1px solid #bbb;
+}
+#nav a{
+	color: gray;
+}
+#db{
+	background: #666666;
+	height: 70px;
+}
+#db li{
+	font-size: 20px;
+	color:#FFFFFF;
+	padding: 20px 20px;
+	float: left;
+}
+.button1{
+	background-color:white;
+	border: none;
+	color: #FF8800;
+	text-align: center;
+	display: inline-block;
+	font-size: 30px;
+	border-radius: 8px;
+}
+.three{
+	width: 25%;
+	height: 100px;
+	float: left;
+	border: 1px solid #bbb;
+	padding: 10px;
+	background: white;
+	margin: 10px;
+	margin-left: 90px;
+	box-shadow:5px 5px 5px #444;
+	color: #8A8282;
+}
+.three-1{
+	color: yellow;
+	float: left;
+	font-size: 50px;
+	font-weight: bold;	
+}
+.three-1-2{
+	float: left;
+	margin: 2px;
+	padding: 2px;
+	
+}
+.three-1-2-1{
+	padding: 3px;
+}
+#gongao{
+	color: #444444;
+	height: 22px;
+	margin: 10px;
+	border:1px solid #bbb;
+	background: white;
+	box-shadow:5px 5px 5px #444;
+}
+#gongao li{
+	float: left;
+}
+#gongao a{
+	color: #444444;
+}
+.middle{
+	box-shadow:5px 5px 5px #444;
+	border: 1px solid #bbb;
+	border-top: 2px solid #CC6600;
+	margin: 0 auto;
+	margin-top:20px;
+	width: 95%;
+	height: 600px;
+	overflow: hidden;
+}
+.middle-left{
+	float: left;
+	background: #CCDDFF;
+	border-right:1px solid #bbb;
+	font-style: italic;
+	width: 25%;
+	text-align: center;
+	height: 600px;
+}
+.middle-left-1{
+	font-size: 25px;
+	margin-top: 20px;
+}
+.middle-left-2{
+	font-size: 15px;
+	margin-top: 15px;
+}
+.middle-right{
+	float: left;
+	width: 75%;
+	text-align: center;
+	height: 120px;
+}
+.middle-right-1{
+	float: left;
+	width:100%;
+	border-bottom:1px solid #bbb;
+}
+/*.middle-right-1:last-child{border-bottom: none;}*/
+.middle-right-1-1{
+	float: left;
+	width: 25%;
+	border-right:1px solid #bbb;
+}
+.middle-right-1-2{
+	float: left;
+	width: 25%;
+	border-right:1px solid #bbb;
+	text-align: center;
+}
+.middle-right-1-2:last-child{border-right: none;}
+.button2{
+	background:none;
+	border: none;
+	color:  #AAAAAA;
+	text-align: center;
+	display: inline-block;
+	font-size: 45px;
+}
+.button3{
+	background:none;
+	border: none;
+	color:  #FF8800;
+	text-align: center;
+	display: inline-block;
+	font-size: 35px;
+}
+.button4{
+	background:#FF8800;
+	width: 140px;
+	height: 40px;
+	border: none;
+	color:  white;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 25px;
+}
+.button4-1{
+	background:#AAAAAA;
+	width: 120px;
+	border: none;
+	color:  white;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 25px;
+}
+#footer{
+	border-top: 1px solid #bbb;
+	margin-top: 20px;
+	float: left;
+	width: 100%;
+	height: 150px;
+	background: #FFFFFF;
+}
+#footer-1{
+	width: 30%;
+	float:left;
+	text-align: center;
+	margin-top: 10px;
+}
+.footer-2{
+	text-align: center;
+	margin-top: 10px;
+	float: left;
+	width: 14%;
+}
+.footer-2 li{
+	color: #AAAAAA;
+}
+#siteinfoLegal{
+	margin-top:30px;
+	margin-left: 580px;
+	text-align: center;
+}
+#siteinfoLegal li{
+	float: left;
+	padding: 6px;
+}
+</style>
+<script type="text/javascript" src="jq/jquery-3.2.1.js"></script> 
+<script type="text/javascript" src="jq/slider.js"></script> 
+</head>
+
+<body>
+<div id="container">
+<!--顶部-->
+ <div id="phone">
+ 	<p>理财热线：400-888-8888</p>
+ </div>
+ <div id="top">
+   <ul>
+      <li><a href="#">APP下载</a></li>
+      <li><a href="#">帮助</a></li>
+      <li><a href="#">关于</a></li>
+      <li><a href="#">快速注册</a></li>
+      <li><a href="#">登录</a></li>      
+    </ul>
+ </div>
+<div class="clean"></div>
+
+<div id="nav-logo"> 
+	<img src="img/logo@1x.png" alt="理财宝">
+</div>
+ <div>
+ 	<ul id="nav">
+ 		<li><a href="#">安全保障</a></li>
+ 		<li><a href="#">新手专区</a></li>
+ 		<li><a href="#">投资频道</a></li>
+ 		<li><a href="#">理财频道</a></li>
+ 		<li><a href="#">首页</a></li>
+  	</ul>
+ </div>
+<div class="clean"></div>
+ <div id="db">
+ 	<ul>
+ 		<li>平台累计成交金额</li>
+ 		<li><button class="button1">19888</button></li>
+ 		<li>万元</li> 
+ 		<li>过去七日成交金额</li>
+ 		<li><button class="button1">1888</button></li>
+ 		<li>万元</li>
+ 		<li style="float:right"><a href="#">查看平台运营报告</a></li>
+ 	</ul>
+ </div>
+
+ <!--轮播图-->
+ <div>
+ 	<ul> 
+        <li class="slider-panel"><a href="#"><img src="img/ad001-l.png" srcset="img/ad001.png 480w,img/ad001-m.png 800w,img/ad001-l.png 1600w" ></a></li>  
+        <li class="slider-panel"><a href="#"><img src="img/ad002-l.png" srcset="img/ad002.png 480w,img/ad002-m.png 800w,img/ad002-l.png 1600w"></a></li> 
+        <li class="slider-panel"><a href="#"><img src="img/ad003-l.png" srcset="img/ad003.png 480w,img/ad003-m.png 800w,img/ad003-l.png 1600w"></a></li> 
+    </ul> 
+ </div>
+ 
+ 
+ <div class="slider-extra"> 
+    <ul class="slider-nav"> 
+        <li class="slider-item"></li> 
+        <li class="slider-item"></li> 
+        <li class="slider-item"></li> 
+     </ul> 
+  <div class="slider-page"> 
+    <a class="slider-pre" href="javascript:;;"><</a> 
+    <a class="slider-next" href="javascript:;;">></a> 
+  </div> 
+ </div> 
+
+<div class="three">
+	<div class="three-1">安全</div>
+	   <div class="three-1-2">
+	   	   <div class="three-1-2-1">国家AAA信用平台</div>
+	   	   <div class="three-1-2-1">银行资金托管</div>
+	   	   <div class="three-1-2-1">上市公司背景保证</div>
+	   </div>
+</div>
+
+<div class="three">
+	<div class="three-1">权威</div>
+	   <div class="three-1-2">
+	   	   <div class="three-1-2-1">中央电视台推荐</div>
+	   	   <div class="three-1-2-1">互联网百强企业</div>
+	   	   <div class="three-1-2-1">标准起草单位</div>
+	   </div>
+</div>
+
+<div class="three">
+	<div class="three-1">省心</div>
+	   <div class="three-1-2">
+	   	   <div class="three-1-2-1">100元起投</div>
+	   	   <div class="three-1-2-1">用户利益保障机制</div>
+	   	   <div class="three-1-2-1">保险公司承保</div>
+	   </div>
+</div>
+<div class="clean"></div>
+<div id="gongao">
+	<ul>
+		<li style="color: #AAAAAA">最新公告： 2015-12-31&nbsp; </li>
+		<li><a href="#">元旦期间业务受理及值班公告元旦期间业务受理及值班公告元旦期间业务...</a></li>
+		<li style="float: right"><a href="#">更多公告</a></li>
+	</ul>
+</div>
+
+<div class="middle">
+	<div class="middle-left">
+		<div class="middle-left-1">固定期限产品</div>
+		<div class="middle-left-2">甄选优质基金</div>
+		<div class="middle-left-2">省时省力</div>
+		<div class="middle-left-2">坐等收益</div>
+	</div>
+	<div class="middle-right">
+		<div class="middle-right-1">
+			<div class="middle-right-1-1">
+				<p><button class="button2">3</button>个月</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>约定年化收益率：</p>
+				<p><button class="button3">3.50%</button>起</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>总成交金额</p>
+				<p><button class="button3">1880</button>万元</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p><button class="button4">购买</button></p>
+			</div>
+		</div>
+	</div>
+	<div class="middle-right">
+	<div class="middle-right-1">
+			<div class="middle-right-1-1">
+				<p><button class="button2">3-6</button>个月</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>约定年化收益率：</p>
+				<p><button class="button3">3.60%</button>起</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>总成交金额</p>
+				<p><button class="button3">2880</button>万元</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p><button class="button4">购买</button></p>
+			</div>
+		</div>
+	</div>
+<div class="middle-right">
+	<div class="middle-right-1">
+			<div class="middle-right-1-1">
+				<p><button class="button2">6-12</button>个月</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>约定年化收益率：</p>
+				<p><button class="button3">4.50%</button>起</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>总成交金额</p>
+				<p><button class="button3">3880</button>万元</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p><button class="button4">购买</button></p>
+			</div>
+		</div>
+	</div>
+
+<div class="middle-right">
+	<div class="middle-right-1">
+			<div class="middle-right-1-1">
+				<p><button class="button2">24</button>个月以上</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>约定年化收益率：</p>
+				<p><button class="button3">6.20%</button>起</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>总成交金额</p>
+				<p><button class="button3">5880</button>万元</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p><button class="button4">购买</button></p>
+			</div>
+		</div>
+	</div>
+<div class="middle-right">
+	<div class="middle-right-1">
+			<div class="middle-right-1-1">
+				<p><button class="button2">3</button>个月</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>约定年化收益率：</p>
+				<p><button class="button3">3.50%</button>起</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>总成交金额</p>
+				<p><button class="button3">1880</button>万元</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p><button class="button4">购买</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="middle">
+	<div class="middle-left">
+		<div class="middle-left-1">债权/散标产品</div>
+		<div class="middle-left-2">自主投资</div>
+		<div class="middle-left-2">期限灵活</div>
+	</div>
+	<div class="middle-right">
+		<div class="middle-right-1">
+			<div class="middle-right-1-1">
+				<p><button class="button2">3</button>个月</p>
+				<p style="color: #bbbbbb">日常消费</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>约定年化收益率：</p>
+				<p><button class="button3">4.90%</button></p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>金额</p>
+				<p><button class="button3">18,000</button>元</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p><button class="button4">投标</button></p>
+			</div>
+		</div>
+	</div>
+	<div class="middle-right">
+		<div class="middle-right-1">
+			<div class="middle-right-1-1">
+				<p><button class="button2">5</button>个月</p>
+				<p style="color: #bbbbbb">资金周转</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>约定年化收益率：</p>
+				<p><button class="button3">5.20%</button>起</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>金额</p>
+				<p><button class="button3">28,000</button>元</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p><button class="button4">投标</button></p>
+			</div>
+		</div>
+	</div>
+	<div class="middle-right">
+		<div class="middle-right-1">
+			<div class="middle-right-1-1">
+				<p><button class="button2">7</button>个月</p>
+				<p style="color: #bbbbbb">个人消费</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>约定年化收益率：</p>
+				<p><button class="button3">5.50%</button>起</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>金额</p>
+				<p><button class="button3">38,800</button>元</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p><button class="button4-1">还款中</button></p>
+			</div>
+		</div>
+	</div>
+	<div class="middle-right">
+		<div class="middle-right-1">
+			<div class="middle-right-1-1">
+				<p><button class="button2">1</button>个月</p>
+				<p style="color: #bbbbbb">日常生活消费</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>约定年化收益率：</p>
+				<p><button class="button3">4.60%</button>起</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>金额</p>
+				<p><button class="button3">48,800</button>元</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p><button class="button4-1">还款中</button></p>
+			</div>
+		</div>
+	</div>
+	<div class="middle-right">
+		<div class="middle-right-1">
+			<div class="middle-right-1-1">
+				<p><button class="button2">12</button>个月以上</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>约定年化收益率：</p>
+				<p><button class="button3">7.20%</button>起</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p>金额</p>
+				<p><button class="button3">58,800</button>元</p>
+			</div>
+			<div class="middle-right-1-2">
+				<p><button class="button4-1">已满标</button></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+<div id="footer-1">
+	<img src="img/logo@2x.png">
+</div>
+
+<div class="footer-2">
+	<ul>
+		<li style="font-size: 18px;color: #000000;">关于我们</li>
+		<li>公司介绍</li>
+		<li>业务模式</li>
+		<li>合作机构</li>
+		<li>服务协议</li>
+	</ul>
+</div>
+<div class="footer-2">
+	<ul>
+		<li style="font-size: 18px;color: #000000;">风险防范</li>
+		<li>账户安全</li>
+		<li>安全保障</li>
+	</ul>
+</div>
+
+<div class="footer-2">
+	<ul>
+		<li style="font-size: 18px;color: #000000;">理财产品</li>
+		<li>固定期限</li>
+		<li>债权/散标</li>
+	</ul>
+</div>
+
+<div class="footer-2">
+	<ul>
+		<li style="font-size: 18px;color: #000000;">交易帮助</li>
+		<li>购买</li>
+		<li>赎回</li>
+		<li>提现</li>
+	</ul>
+</div>
+
+<div class="footer-2">
+	<ul>
+		<li style="font-size: 18px;color: #000000;">机构服务</li>
+		<li>机构中心</li>
+		<li>合作关系</li>
+	</ul>
+</div>
+</div>
+
+<div class="clean"></div>
+<div id="siteinfoLegal">
+	<ul>
+		<li><img src="img/1.png" width="40px" height="30px"></li>
+		<li><img src="img/2.png" width="40px" height="30px"></li>
+		<li><img src="img/3.png" width="40px" height="30px"></li>
+		<li><img src="img/4.png" width="40px" height="30px"></li>
+		<li><img src="img/5.png" width="40px" height="30px"></li>
+		<li><img src="img/6.png" width="40px" height="30px"></li>
+		<li><img src="img/7.png" width="40px" height="30px"></li>
+	</ul>
+</div>
+
+<div class="clean"></div>
+<div><address>北京某互联网金融公司版权所有&reg;2015-2016</address></div>
+
+</div>
+</body>
+</html> 
